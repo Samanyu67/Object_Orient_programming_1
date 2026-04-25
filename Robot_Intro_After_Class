@@ -1,0 +1,25 @@
+class Robot:
+    def __init__(self, name, purpose, model_year):
+        """
+        Constructor to initialize robot attributes.
+        'self' connects attributes to the specific object created.
+        """
+        self.name = name
+        self.purpose = purpose
+        self.model_year = model_year
+
+    def introduce_self(self):
+        """Method to print a robot's introduction."""
+        print(f"Hello! My name is {self.name}.")
+        print(f"I was built in {self.model_year} for the purpose of {self.purpose}.")
+
+# Instantiate (create) objects based on the Robot class
+robot1 = Robot("Nova", "AI interaction", 2025)
+robot2 = Robot("Sparky", "home cleaning", 2023)
+
+# Call the introduction method for each robot
+print("--- Robot 1 ---")
+robot1.introduce_self()
+
+print("\n--- Robot 2 ---")
+robot2.introduce_self()
